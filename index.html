@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ak Girişim Gayrimenkul | Hakkımızda</title>
+    <title>Ak Girişim Gayrimenkul</title>
     <link rel="icon" href="./favicon.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,397 +11,133 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
-      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <style>
-       * {
-         margin: 0;
-         padding: 0;
-         box-sizing: border-box;
-       }
-       body {
-         display: flex;
-         overflow-x: hidden;
-         background-color: #FAFCFF;
-         font-family: "Poppins", serif;
-       }
-
-       body::-webkit-scrollbar-track
-          {
-              -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-              background-color: #F5F5F5;
-              border-radius: 10px;
-          }
-
-          body::-webkit-scrollbar
-          {
-              width: 7px;
-              background-color: #F5F5F5;
-          }
-
-          body::-webkit-scrollbar-thumb
-          {
-              background-image: -webkit-gradient(linear,
-              left bottom,
-              left top,
-              color-stop(0.5, #fb835e),
-              color-stop(0.8, #fb835e),
-              color-stop(0.9,  #fb835e));
-          }
-
-       #link-button {
-           --color: #E75C31;
-           font-family: inherit;
-           display: inline-block;
-           width: 8em;
-           height: 2.6em;
-           line-height: 2.5em;
-           position: relative;
-           cursor: pointer;
-           overflow: hidden;
-           border: 2px solid var(--color);
-           transition: color 0.5s;
-           z-index: 1;
-           font-size: 17px;
-           border-radius: 6px;
-           font-weight: 500;
-           color: var(--color);
-           text-decoration: none;
-           text-align: center;
-       }
-
-       #link-button:before {
-           content: "";
-           position: absolute;
-           z-index: -1;
-           background: var(--color);
-           height: 150px;
-           width: 200px;
-           border-radius: 50%;
-       }
-
-       #link-button:hover {
-           color: #fff;
-       }
-
-       #link-button:before {
-           top: 100%;
-           left: 100%;
-           transition: all 0.7s;
-       }
-
-       #link-button:hover:before {
-           top: -30px;
-           left: -30px;
-       }
-
-       #link-button:active:before {
-           background: #E75C31;
-           transition: background 0s;
-       }
-
-       .shadow-bottom {
-         box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 3px 0px;
-         display: flex;
-       }
-
-       @media only screen and (max-width: 600px) {
-        .shadow-bottom > div {
-        display: flex;
-         flex-direction: column;
-         gap:15px;
-       }
-       }
-
-       .box-shadow {
-         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-         border-radius: 8px;
-         padding: 20px;
-         width: 49%;
-         position: relative;
-         background-color: white;
-       }
-
-       @media only screen and (max-width: 1200px) {
-        .box-shadow {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-       }
-
-       .bottom-line {
-         padding-bottom: 7px;
-         margin-bottom: 14px;
-         border-bottom: 1px solid rgba(50, 50, 93, 0.1);
-       }
-
-       .about-text {
-         text-align: justify;
-         color: #131313;
-         font-size: 15px;
-       }
-
-       .dot {
-         height: 10px;
-         width: 10px;
-         background-color: #E75C31;
-         border-radius: 999px;
-         position: absolute;
-         right:15px;
-         top: 15px;
-       }
-
-       .shadow-little-box {
-         box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
-         border-radius: 3px;
-         padding: 5px;
-         height: fit-content;
-         min-height: 70px;
-         display: flex;
-         flex-direction: column;
-         justify-content: flex-start;
-         align-items: center;
-         position: relative;
-       }
-
-       .label {
-         font-weight: 600;
-         color: #353b48;
-         font-size: 18px;
-         width: 90%;
-         margin-bottom: 5px;
-       }
-
-       .label-text {
-         font-weight: 400;
-         color: #353b48;
-         font-size: 14px;
-        text-align: justify;
-        text-decoration: none;
-        width: 90%;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
-
-      .shadow-little-box-inner {
-        width: 48%;
-      }
-
-      .shadow-little-box-container {
+      body {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        background-color: #f4f4f4;
+        font-family: "Poppins", serif;
+      }
+      img {
         width: 100%;
-        gap: 4%;
-        flex-wrap: wrap;
+        object-fit: contain;
+        user-select: none;
+        max-width: 800px;
+        padding: 0 120px;
       }
 
-      @media only screen and (max-width: 600px) {
-        .shadow-little-box-inner {
-            width: 100%;
-            margin: 0 !important;
-        }
+      @media only screen and (max-width: 800px) {
+        img {
+        padding: 0 50px;
+      }
       }
 
-      @media only screen and (max-width: 600px) {
-        .shadow-little-box-container {
-            gap: 10px;
-        }
+      @media only screen and (max-width: 400px) {
+        img {
+        padding: 0 15px;
+      }
       }
 
-      .icon-container {
-        position: absolute;
-        right:5px;
-        top:5px;
-      }
-
-      .main-container {
+      .info-container {
+        margin-top: 50px;
+        width: 100%;
         display: flex;
-        flex-wrap: wrap;
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 2%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 10px;
       }
 
-      .about-link {
-        color: #0984e3;
-        text-decoration: none;
-        font-weight: 500;
-        transition: color 300ms;
+      .info-container address {
+        font-weight: 700;
+        font-size: clamp(15px, 3.5vw, 20px);
+        text-align: center;
+        color: #353b48;
+        word-break: break-all;
       }
 
-      .about-link:hover {
+      .info-container a {
+        font-weight: 600;
+        font-size: clamp(18px, 4vw, 25px);
+        text-align: center;
         color: #E75C31;
+        text-decoration: none;
+        word-break: break-all;
+        margin-top: 10px;
+      }
+
+      #link-button {
+          --color: #E75C31;
+          font-family: inherit;
+          display: inline-block;
+          width: 8em;
+          height: 2.6em;
+          line-height: 2.5em;
+          margin: 20px;
+          position: relative;
+          cursor: pointer;
+          overflow: hidden;
+          border: 2px solid var(--color);
+          transition: color 0.5s;
+          z-index: 1;
+          font-size: 17px;
+          border-radius: 6px;
+          font-weight: 500;
+          color: var(--color);
+          text-decoration: none;
+          text-align: center;
+      }
+
+      #link-button:before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          background: var(--color);
+          height: 150px;
+          width: 200px;
+          border-radius: 50%;
+      }
+
+      #link-button:hover {
+          color: #fff;
+      }
+
+      #link-button:before {
+          top: 100%;
+          left: 100%;
+          transition: all 0.7s;
+      }
+
+      #link-button:hover:before {
+          top: -30px;
+          left: -30px;
+      }
+
+      #link-button:active:before {
+          background: #E75C31;
+          transition: background 0s;
       }
     </style>
   </head>
-  <body style="display: flex; flex-direction: column;">
-    <div
-      class="shadow-bottom"
-      style="background-color: #fff; width: 100%;display: flex; justify-content: center; align-items: center; padding: 20px 20px;"
-    >
-      <div
-        style="max-width: 1280px;  display: flex; align-items: center; justify-content: space-between; width: 100%;"
-      >
-        <a href="/index.html" style="display: flex; align-items: center;">
-          <img
-            style="height: 55px;"
-            draggable="false"
-            src="./logo.png"
-            alt="Logo"
-          />
-        </a>
-
-        <a id="link-button" href="tel:08503024790">İletişim</a>
-      </div>
+  <body>
+    <img draggable="false" src="./logo.png" alt="Logo" />
+    <div class="info-container">
+      <address>
+        Sinanpaşa Mah. Süleyman Seba Cad. No:14/5 <br />
+        Beşiktaş / İstanbul
+      </address>
+      <a href="tel:+908503024790">0850 302 47 90</a>
     </div>
-
-    <div
-      style="height: 100%; width: 100%;display: flex; justify-content: center; align-items: center; padding: 30px 10px;"
-    >
-      <div class="main-container" style="max-width: 1280px;  width: 100%;">
-        <div class="box-shadow">
-          <div>
-            <p
-              style="color: #E75C31; font-weight: 600; font-size: 20px; margin-bottom: 5px;"
-            >
-              Hakkımızda
-            </p>
-            <h1 class="bottom-line" style="color: #131313; font-size: 30px;">
-              AK Girişim Gayrimenkul A.Ş.
-            </h1>
-
-            <div class="dot"></div>
-
-            <p class="about-text" style="margin-bottom: 10px;">
-              AK Girişim Gayrimenkul A.Ş., yatırım sektöründe inovatif ve güven
-              odaklı bir yaklaşımla hizmet sunan öncü bir şirkettir.
-            </p>
-
-            <div class="about-text" style="margin-bottom: 10px;">
-              Şirketimiz yatırımı olan
-              <a
-                class="about-link"
-                target="_blank"
-                href="https://ihtiyackredisi.com/"
-                >ihtiyackredisi.com</a
-              >
-              ; İhtiyaç Kredisi, Konut Kredisi ve Taşıt Kredisi gereksinimi
-              bulunan kişiler ile doğru bankaları eşleştirmeyi amaç edinen bir
-              internet yatırımı FinTech projedir.
-            </div>
-
-            <p class="about-text" style="margin-bottom: 10px;">
-              Türkiye genelinde çeşitli gayrimenkul projeleri geliştiren,
-              alım-satım, kiralama ve yatırım danışmanlığı alanlarında faaliyet
-              gösteren AK Girişim Gayrimenkul A.Ş., sektördeki engin tecrübesi
-              ve yenilikçi çözümleriyle fark yaratmaktadır.
-            </p>
-
-            <p class="about-text" style="margin-bottom: 10px;">
-              Kurumsal ilkelerimiz arasında şeffaflık, müşteri memnuniyeti ve
-              profesyonellik ön planda yer almaktadır.
-            </p>
-
-            <p class="about-text" style="margin-bottom: 10px;">
-              Yatırım seçimlerinizde sizlere güvenilir bir rehber olmayı misyon
-              edinen şirketimiz, güçlü iş ortaklıkları ve profesyonel kadrosuyla
-              her geçen gün büyümeye devam etmektedir.
-            </p>
-
-            <p class="about-text" style="margin-bottom: 10px;">
-              AK Girişim Gayrimenkul A.Ş., yatırım sektöründe kalite ve güvenin
-              simgesi olma yolunda, değer yaratmayı ve sürdürülebilir başarıyı
-              ilke edinmiştir.
-            </p>
-          </div>
-        </div>
-
-        <div class="box-shadow">
-          <div>
-            <p
-              style="color: #E75C31; font-weight: 600; font-size: 20px; margin-bottom: 5px;"
-            >
-              İletişim
-            </p>
-            <h1 class="bottom-line" style="color: #131313; font-size: 30px;">
-              Bizimle İletişime Geçin
-            </h1>
-
-            <div class="dot"></div>
-
-            <div class="shadow-little-box-container">
-              <div class="shadow-little-box-inner">
-                <div
-                  class="shadow-little-box"
-                  style="background-color: #FAFCFF;"
-                >
-                  <p class="label">Telefon</p>
-                  <a href="tel:08503024790" class="label-text"
-                    >0850 302 47 90</a
-                  >
-
-                  <div class="icon-container">
-                    <i class="ri-phone-fill"></i>
-                  </div>
-                </div>
-              </div>
-
-              <div class="shadow-little-box-inner">
-                <div
-                  class="shadow-little-box"
-                  style="background-color: #FAFCFF;"
-                >
-                  <p class="label">E-mail</p>
-                  <a href="mailto:akgirisim @hs01.kep.tr" class="label-text">
-                    akgirisim @hs01.kep.tr
-                  </a>
-
-                  <div class="icon-container">
-                    <i class="ri-mail-fill"></i>
-                  </div>
-                </div>
-              </div>
-
-              <div class="shadow-little-box-inner" style="margin-top: 15px;">
-                <div
-                  class="shadow-little-box"
-                  style="background-color: #FAFCFF;"
-                >
-                  <p class="label">Adres</p>
-                  <p class="label-text">
-                    Sinanpaşa Mah. Süleyman Seba Cad. No:14/5 Beşiktaş/İstanbul
-                  </p>
-
-                  <div class="icon-container">
-                    <i class="ri-map-pin-fill"></i>
-                  </div>
-                </div>
-              </div>
-
-              <div class="shadow-little-box-inner" style="margin-top: 15px;">
-                <div
-                  class="shadow-little-box"
-                  style="background-color: #FAFCFF;"
-                >
-                  <p class="label">Şirket Bilgileri</p>
-                  <p class="label-text">
-                    AK GİRİŞİM GAYRİMENKUL İNŞAAT YAPI SANAYİ VE TİC. A.Ş.<br />
-                    Beşiktaş V.D. 0111295529 <br />
-                    Mersis No: 0011129552900001
-                  </p>
-                  <div class="icon-container">
-                    <i class="ri-building-fill"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <a id="link-button" href="/hakkimizda.html">Hakkımızda</a>
   </body>
 </html>
